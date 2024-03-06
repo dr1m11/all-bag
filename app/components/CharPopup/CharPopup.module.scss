@@ -1,0 +1,131 @@
+.root {
+  box-sizing: border-box;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 25px 0;
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h4 {
+    font-size: 24px;
+    font-family: Raleway, serif;
+    line-height: 28px;
+    font-weight: 400;
+  }
+}
+
+.hr {
+  width: 99.5%;
+  background-color: rgb(206, 206, 206);
+  height: 3px;
+  margin: 25px 0;
+}
+
+.plus {
+  position: relative;
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.plusX {
+  width: 37px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 18px;
+  left: -1px;
+}
+
+.plusY {
+  background-color: black;
+  width: 2px;
+  height: 37px;
+  position: absolute;
+  left: 17px;
+  top: 0;
+  transition: transform .2s ease-in-out;
+}
+
+.active {
+  transform: rotateZ(90deg);
+}
+
+.desc2 {
+  overflow: hidden;
+
+  .descrip {
+    margin-top: -300px;
+    transition: margin-top .2s ease-in-out;
+  }
+}
+
+.desc {
+  overflow: hidden;
+
+  h2 {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Radio Canada', sans-serif;
+    margin-top: -50px;
+    transition: margin-top .2s ease-in-out;
+  }
+
+  .descrip {
+    margin-top: 0;
+    transition: margin-top .2s ease-in-out;
+  }
+}
+
+.descr__item {
+  margin-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Raleway, serif;
+
+  h5 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+
+  p {
+    max-width: 447px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+}
+
+@media screen  and (max-width: 1279px){
+  .desc {
+    max-height: 50px;
+    h2 {
+      margin-top: -150px;
+    }
+  }
+}
+
+@media screen  and (max-width: 779px) {
+  .desc2 {
+    .descrip {
+      margin-top: -500px;
+    }
+  }
+
+  .descr__item {
+    display: block;
+    margin-bottom: 20px;
+
+    h5 {
+      margin-bottom: 5px;
+    }
+  }
+}

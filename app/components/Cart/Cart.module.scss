@@ -1,0 +1,129 @@
+.root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.53);
+  font-family: 'Raleway', serif;
+  overflow-y: scroll;
+  z-index: 500;
+}
+
+.wrapper {
+  z-index: 500;
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sidebar {
+  box-sizing: border-box;
+  padding-bottom: 40px;
+  position: absolute;
+  width: 840px;
+  min-height: 100vh;
+  max-height: 200vh;
+  background: white;
+  right: 0;
+}
+
+.top {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  align-items: center;
+}
+
+.link__to__cart {
+  box-sizing: border-box;
+  padding-bottom: 3px;
+  font-size: 40px;
+  color: rgba(36, 36, 36, 0.55);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(36, 36, 36, 0.55);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    color: black;
+    border-bottom: 3px solid black;
+  }
+}
+
+.close {
+  border: none;
+  background: white;
+}
+
+.summary {
+  margin-left: 34px;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    margin-right: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  span {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .crossed {
+    text-decoration: line-through;
+    margin-left: 14px;
+    color: rgb(128, 128, 128);
+  }
+}
+
+.items {
+  max-height: 72vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.confirm {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #1f768b;
+  color: white;
+  margin: 45px 20px 0 34px;
+  width: 90%;
+  height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background: black;
+  }
+}
+
+@media screen  and (max-width: 1279px){
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .close {
+    max-width: 60%;
+  }
+
+  .items {
+    width: 100%;
+  }
+
+  .top {
+    padding: 10px;
+  }
+}

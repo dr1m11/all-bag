@@ -1,0 +1,151 @@
+.main {
+  background-color: rgb(31, 118, 140);
+  width: 100%;
+  height: 100vh;
+  max-height: 270px;
+  color: white;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1130px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column1 {
+  font-family: "Raleway", serif;
+  max-width: 252px;
+  h2 {
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: 7px;
+    word-spacing: 10px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 15px;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+.columns {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column2, .column3, .column4 {
+  font-family: 'Raleway', serif;
+  h5 {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  a {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.column2 {
+  max-width: 213px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  width: 100vw;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 135px;
+}
+
+.left {
+  a:last-of-type {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px){
+  .wrapper {
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
+  .right {
+    display: none;
+  }
+
+  .left {
+    a:last-of-type {
+      display: block;
+    }
+    height: 175px;
+  }
+
+  .columns {
+    justify-content: space-around;
+  }
+
+  .container {
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 779px){
+  .main {
+    max-height: 462px;
+  }
+  .wrapper {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .column1 {
+    margin-top: 15px;
+    max-width: 326px;
+  }
+
+  .columns {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .socials {
+    max-width: 80%;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .wrapper {
+    padding: 0 5px 0 15px;
+  }
+
+  .column2 {
+    max-width: 210px;
+  }
+}

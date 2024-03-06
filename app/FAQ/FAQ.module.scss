@@ -1,0 +1,80 @@
+.root {
+  max-width: 1920px;
+  margin: 30px auto 100px;
+}
+
+.top {
+  margin: 0 auto;
+  max-width: 940px;
+  width: 100%;
+  text-align: center;
+}
+
+.main__heading {
+  color: white;
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 66px;
+  background: #1f768b;
+  max-width: 480px;
+  border-radius: 29.5px;
+}
+
+.under__main {
+  background: #1f768b;
+  max-width: 545px;
+  margin: 15px auto 0;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 32px;
+  border-radius: 29.5px;
+}
+
+.search__block {
+  margin-top: 15px;
+  width: 100%;
+  height: 150px;
+  border-bottom: 2px solid rgb(31, 118, 140);;
+}
+
+.search__help {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.help__option {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  padding: 0 10px;
+  font-family: Raleway, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  border: none;
+  width: 220px;
+  height: 40px;
+  border-radius: 18px;
+  background-color: rgba(31, 118, 140, 0.47);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: #1f768b;
+  }
+}
+
+.faq {
+  margin: 50px auto;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  background: #1f768b;
+  width: 110px;
+  border-radius: 29.5px;
+}
+

@@ -1,0 +1,31 @@
+._1 {
+  width: 47px;
+  border: 1px solid white;
+  height: 0;
+}
+
+._2 {
+  width: 31px;
+  border: 1px solid white;
+  height: 0;
+}
+
+._3 {
+  width: 47px;
+  border: 1px solid white;
+  height: 0;
+}
+
+.HeaderRightButton {
+  width: 47px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1919px){
+
+}

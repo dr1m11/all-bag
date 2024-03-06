@@ -1,0 +1,30 @@
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  border: 1px solid rgb(36, 36, 36);
+  border-radius: 8px;
+  padding: 0 30px 0 15px;
+}
+
+.input {
+  font-family: 'Raleway', serif;
+  width: 90%;
+  height: 80%;
+  max-height: unset;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input::placeholder {
+  font-size: 16px;
+  color: rgb(36, 36, 36);
+}
+
+.searchBtn {
+  cursor: pointer;
+}

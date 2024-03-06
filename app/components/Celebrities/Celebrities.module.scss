@@ -1,0 +1,155 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.second {
+  margin: 0 30px;
+  width: 830px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.desc {
+  margin-top: 7px;
+}
+
+.brand {
+  font-family: 'Radio Canada', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+
+.parag {
+  font-family: 'Radio Canada', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.name {
+  color: rgb(0, 0, 0);
+  font-family: 'Radio Canada', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1919px){
+  .wrapper {
+    img {
+      min-width: 544px;
+    }
+
+    .second {
+      min-width: 597px;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px){
+  .wrapper {
+    img {
+      min-width: 346px;
+    }
+
+    .second {
+      min-width: 356px;
+      margin: 0 15px;
+    }
+  }
+
+  .brand {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .parag {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 779px){
+  .wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    img {
+      max-width: 80%;
+      min-width: 346px;
+    }
+
+    .second {
+      flex-direction: column-reverse;
+      max-width: 80%;
+      min-width: 356px;
+      margin: 0 15px;
+    }
+  }
+
+  .brand {
+    text-align: left;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .parag {
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+
+  .name {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    img {
+      max-width: 80%;
+      min-width: 302px;
+    }
+
+    .second {
+      flex-direction: column-reverse;
+      max-width: 50%;
+      min-width: 300px;
+      margin: 0 30px;
+    }
+  }
+
+  .brand {
+    text-align: left;
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .parag {
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+
+  .name {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}

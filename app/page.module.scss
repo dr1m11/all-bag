@@ -1,0 +1,265 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin-bottom: 280px;
+}
+
+.images1 {
+  max-width: 1920px;
+  width: 100%;
+  margin-top: -5px;
+}
+
+.images {
+  max-width: 1920px;
+  width: 100%;
+}
+
+.heading__top {
+  h1 {
+    width: 1200px;
+    text-align: center;
+    margin: 70px auto;
+    font-family: "Radio Canada", sans-serif;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0;
+    color: black;
+  }
+}
+
+.bags {
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+  img {
+    max-width: 976px;
+    width: 50%;
+  }
+}
+
+.bottom__wrapper {
+  box-sizing: border-box;
+  padding: 0 106px;
+}
+
+.new__collection {
+  margin: 100px auto 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collection__naming {
+  text-align: center;
+  h3 {
+    font-family: Raleway, serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-family: Raleway, serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0;
+    color: rgba(36, 36, 36, 0.7);
+  }
+}
+
+.celebrities {
+  margin: 0 auto;
+  max-width: 1690px;
+}
+
+.bag__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+}
+
+.text {
+  position: absolute;
+  top: 5%;
+  left: 30px;
+  width: 80%;
+  h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Radio Canada", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+  }
+  p {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: "Radio Canada", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+@media screen and (max-width: 1919px){
+  .wrapper {
+    margin-bottom: 124px;
+  }
+  .heading__top {
+    h1 {
+      font-size: 36px;
+    }
+  }
+  .collection__naming {
+    h3 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .bottom__wrapper {
+    padding: 0 60px;
+  }
+
+  .text {
+    top: 10%;
+    left: 5%;
+    width: 80%;
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1279px){
+  .wrapper {
+    margin-bottom: 52px;
+  }
+  .heading__top {
+    h1 {
+      width: 760px;
+      font-size: 24px;
+      line-height: 24px;
+      margin: 50px auto;
+    }
+  }
+  .collection__naming {
+    h3 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+  .bottom__wrapper {
+    padding: 0 18px;
+  }
+
+  .text {
+    top: 10%;
+    left: 5%;
+    width: 80%;
+    h1 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 779px){
+  .wrapper {
+    margin-bottom: 44px;
+  }
+  .heading__top {
+    h1 {
+      max-width: 478px;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 31px auto;
+    }
+  }
+  .collection__naming {
+    h3 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .bottom__wrapper {
+    padding: 0 18px;
+  }
+
+  .text {
+    top: 4%;
+    left: 2%;
+    width: 80%;
+    h1 {
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 479px){
+  .wrapper {
+    margin-bottom: 35px;
+  }
+  .heading__top {
+    h1 {
+      max-width: 335px;
+      font-size: 11px;
+      line-height: 20px;
+      margin: 25px auto;
+    }
+  }
+  .collection__naming {
+    h3 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .bottom__wrapper {
+    padding: 0 5px;
+  }
+
+  .text {
+    top: 4%;
+    left: 10%;
+    width: 80%;
+    h1 {
+      margin-bottom: 5px;
+      font-size: 10px;
+    }
+    p {
+      line-height: 15px;
+      font-size: 9px;
+    }
+  }
+}
